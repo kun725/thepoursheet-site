@@ -63,6 +63,13 @@ body { width:auto; max-width:1240px; margin:0 auto; }
 .faq dt { font-weight:bold; font-size:14px; margin-top:14px; }
 .faq dd { font-family:Helvetica,Arial,sans-serif; font-size:12.5px; color:#4a463d; line-height:1.6; margin:4px 0 0 0; }
 @media (max-width:900px) { .how { flex-direction:column; } }
+.reqform { max-width:560px; margin:16px auto 0; text-align:left; font-family:Helvetica,Arial,sans-serif; }
+.frow { display:flex; gap:10px; }
+.reqform input[type=text], .reqform input[type=email], .reqform select, .reqform textarea { width:100%; padding:10px 12px; margin-bottom:10px; border:1px solid #c5bba4; background:#fffdf7; font-family:Helvetica,Arial,sans-serif; font-size:13px; color:#1c1a15; }
+.reqform textarea { height:64px; resize:vertical; }
+.reqform .btn { border:none; cursor:pointer; width:100%; }
+.cta .alt { margin-top:12px; font-size:12px; color:#8a8579; }
+@media (max-width:600px) { .frow { flex-direction:column; gap:0; } }
 .pagefoot { text-align:center; font-family:Helvetica,Arial,sans-serif; font-size:11px; color:#8a8579; padding:18px 0 40px; line-height:1.7; }
 @media (max-width:900px) { .venue { flex-direction:column; } .vleft,.vbudget { width:auto; text-align:left; } .diffs { flex-direction:column; } }
 </style></head><body>
@@ -81,10 +88,10 @@ body { width:auto; max-width:1240px; margin:0 auto; }
   <h1>THE POUR SHEET</h1>
   <div class="ed">SAMPLE EDITION · AUGUST 2026<br>NYC pre-opening intelligence · weekly</div>
 </div>
-<div class="tagline">Who's opening, how close they really are, and what they're spending &mdash; straight from the filings.</div>
+<div class="tagline">Who's opening, how close they really are, and what they're spending, straight from the filings.</div>
 
 <div class="diffs">
-  <div class="diff"><b>EVERY CLAIM CARRIES ITS DATE.</b> Filing dates from the record and a checked date on every row &mdash; including the rows where no record exists yet.</div>
+  <div class="diff"><b>EVERY CLAIM CARRIES ITS DATE.</b> Filing dates from the record and a checked date on every row, including the rows where no record exists yet.</div>
   <div class="diff"><b>BUILDOUT $ FROM BUILDINGS FILINGS.</b> What they're investing, venue by venue.</div>
   <div class="diff"><b>STAGE ACROSS ALL THREE TRACKS.</b> Buildings, liquor, and health filings each move on their own schedule. Missing filings shown.</div>
 </div>
@@ -93,28 +100,28 @@ body { width:auto; max-width:1240px; margin:0 auto; }
   <div class="vleft">
     <div class="vname">20 Blocks</div>
     <div class="vwhere">215 E 4th St, East Village</div>
-    <div class="vwho"><b>Jack August &amp; Willy Corman</b> (Empty Lunchbox LLC) &mdash; EV-raised founders, community-garden pop-up before this. <span class="redact">contact in full edition</span></div>
+    <div class="vwho"><b>Jack August &amp; Willy Corman</b> (Empty Lunchbox LLC), EV-raised founders, community-garden pop-up before this. <span class="redact">contact in full edition</span></div>
   </div>
   <div class="vmain">
-    <div class="stageord">STAGE 4 OF 5 &mdash; INSPECTIONS</div>
-    <div class="ladder"><span class="done">SPACE &mdash; bought the built-out Izakaya premises ✓</span><span class="pend">LIQUOR &mdash; pending + temp permit requested</span><span class="pend">HEALTH &mdash; inspected 7/30, items to fix</span></div>
+    <div class="stageord">STAGE 4 OF 5: INSPECTIONS</div>
+    <div class="ladder"><span class="done">SPACE: bought the built-out Izakaya premises ✓</span><span class="pend">LIQUOR: pending + temp permit requested</span><span class="pend">HEALTH: inspected 7/30, items to fix</span></div>
     <div class="fit"><b>CALL IF YOU SELL:</b> food distribution &middot; kitchen &amp; hood service &middot; POS &middot; beer/wine &middot; AV &amp; retail fixtures</div>
-    <div class="read"><b>Read:</b> furthest along on this sheet &mdash; pre-opening inspection 7/30, items still to fix. Conditions on the record: sandwich shop with full kitchen open all hours, noon open, no outdoor. 20 seats, occupancy 74, ~6 staff planned. Buildout notes from the filings: projector screen, vinyl, a retail pantry sideline.</div>
-    <div class="watch"><b>Watch:</b> reinspection is the gate &mdash; and the temporary permit means pouring can legally precede the final licence.</div>
+    <div class="read"><b>Read:</b> furthest along on this sheet. Pre-opening inspection 7/30, items still to fix. Conditions on the record: sandwich shop with full kitchen open all hours, noon open, no outdoor. 20 seats, occupancy 74, ~6 staff planned. Buildout notes from the filings: projector screen, vinyl, a retail pantry sideline.</div>
+    <div class="watch"><b>Watch:</b> reinspection is the gate, and the temporary permit means pouring can legally precede the final licence.</div>
     <div class="receipts">Health Dept.: on file, initial inspection 7/30 &middot; liquor application via purchase of the prior licensee's assets &middot; on the record with Manhattan CB3 since March '25, conditions agreed &middot; checked 8/6</div>
   </div>
-  <div class="vbudget"><div class="none">acquired built-out space<br>(asset sale &mdash; no buildings<br>filing to carry a figure)</div><div class="win"><b>WINDOW:</b> 2&ndash;6 wks<br>stage-typical, gated<br>on reinspection</div></div>
+  <div class="vbudget"><div class="none">acquired built-out space<br>(asset sale, no buildings<br>filing to carry a figure)</div><div class="win"><b>WINDOW:</b> 2&ndash;6 wks<br>stage-typical, gated<br>on reinspection</div></div>
 </div>
 
 <div class="venue">
   <div class="vleft">
     <div class="vname">Ugly Baby</div>
     <div class="vwhere">364 Grand St, Williamsburg (ex&ndash;Emmy Squared)</div>
-    <div class="vwho"><b>Sirichai Sreparplarn</b>, chef of the closed Smith St original &mdash; first location with a full bar. <span class="redact">contact in full edition</span></div>
+    <div class="vwho"><b>Sirichai Sreparplarn</b>, chef of the closed Smith St original, first location with a full bar. <span class="redact">contact in full edition</span></div>
   </div>
   <div class="vmain">
-    <div class="stageord">STAGE 3 OF 5 &mdash; LICENSED, HEALTH PENDING</div>
-    <div class="ladder"><span class="done">LIQUOR &mdash; restaurant licence ISSUED 8/3, bar permit 8/5 ✓</span><span class="pend">HEALTH &mdash; applied, no inspection yet</span></div>
+    <div class="stageord">STAGE 3 OF 5: LICENSED, HEALTH PENDING</div>
+    <div class="ladder"><span class="done">LIQUOR: restaurant licence ISSUED 8/3, bar permit 8/5 ✓</span><span class="pend">HEALTH: applied, no inspection yet</span></div>
     <div class="fit"><b>CALL IF YOU SELL:</b> spirits &amp; wine &middot; smallwares &middot; linen &middot; POS &middot; reservations</div>
     <div class="read"><b>Read:</b> licence in hand this week; the health track says weeks out, not days. First location with a full bar means the beverage program is being built from zero.</div>
     <div class="watch"><b>Watch:</b> inspection scheduling is the swing variable; a February target already slipped once.</div>
@@ -127,13 +134,13 @@ body { width:auto; max-width:1240px; margin:0 auto; }
   <div class="vleft">
     <div class="vname">Booth's Extra Fine</div>
     <div class="vwhere">62 S 2nd St (Wythe corner), Williamsburg</div>
-    <div class="vwho"><b>Nick Pfannerstill</b> &mdash; operator of Nobody Told Me (UWS + Dumbo); owner on the Buildings Dept. paperwork. <span class="redact">contact in full edition</span></div>
+    <div class="vwho"><b>Nick Pfannerstill</b>, operator of Nobody Told Me (UWS + Dumbo); owner on the Buildings Dept. paperwork. <span class="redact">contact in full edition</span></div>
   </div>
   <div class="vmain">
-    <div class="stageord">STAGE 2 OF 5 &mdash; LICENSING</div>
-    <div class="ladder"><span class="done">BUILD &mdash; 2 filings since 3/25 ✓</span><span class="pend">LIQUOR &mdash; applied 7/22</span><span class="none2">HEALTH &mdash; no filing yet</span></div>
+    <div class="stageord">STAGE 2 OF 5: LICENSING</div>
+    <div class="ladder"><span class="done">BUILD: 2 filings since 3/25 ✓</span><span class="pend">LIQUOR: applied 7/22</span><span class="none2">HEALTH: no filing yet</span></div>
     <div class="fit"><b>CALL IF YOU SELL:</b> spirits &amp; wine &middot; ice &amp; glassware &middot; POS &middot; kitchen equipment &middot; insurance</div>
-    <div class="read"><b>Read:</b> their own IG says fall, and the filings fit: liquor applied 7/22, no health filing yet &mdash; the stage where equipment and fit-out get bought. A third venue for this operator: expansion accounts, not greenfield.</div>
+    <div class="read"><b>Read:</b> their own IG says fall, and the filings fit: liquor applied 7/22, no health filing yet. That is the stage where equipment and fit-out get bought. A third venue for this operator: expansion accounts, not greenfield.</div>
     <div class="watch"><b>Watch:</b> a health filing appearing is the signal the timeline is compressing.</div>
     <div class="receipts">Buildings Dept.: $170,000 (3/18/25) + $26,000 (5/29/25) &middot; Liquor Authority: application logged complete 7/22 &middot; on the record with Brooklyn CB1, June 15 &middot; Health Dept.: no record at this address &middot; checked 8/6</div>
   </div>
@@ -144,13 +151,13 @@ body { width:auto; max-width:1240px; margin:0 auto; }
   <div class="vleft">
     <div class="vname">Pony's</div>
     <div class="vwhere">424 Van Brunt St, Red Hook</div>
-    <div class="vwho"><b>Elana Shvalbe &amp; Michael Furac</b> &mdash; the Five Seats barbershop cocktail pop-up ('20&ndash;'21), first brick-and-mortar. <span class="redact">contact in full edition</span></div>
+    <div class="vwho"><b>Elana Shvalbe &amp; Michael Furac</b>, the Five Seats barbershop cocktail pop-up ('20&ndash;'21), first brick-and-mortar. <span class="redact">contact in full edition</span></div>
   </div>
   <div class="vmain">
-    <div class="stageord">STAGE 3 OF 5 &mdash; LICENSED, HEALTH PENDING</div>
-    <div class="ladder"><span class="done">LIQUOR &mdash; ISSUED 7/29 ✓</span><span class="pend">HEALTH &mdash; applied, no inspection yet</span></div>
+    <div class="stageord">STAGE 3 OF 5: LICENSED, HEALTH PENDING</div>
+    <div class="ladder"><span class="done">LIQUOR: ISSUED 7/29 ✓</span><span class="pend">HEALTH: applied, no inspection yet</span></div>
     <div class="fit"><b>CALL IF YOU SELL:</b> spirits &amp; wine &middot; smallwares &middot; POS &middot; glassware</div>
-    <div class="read"><b>Read:</b> same paper stage as Ugly Baby &mdash; licensed, not yet inspected. No date announced; IG bio still says coming soon. First venue for these operators: everything gets bought, nothing inherited.</div>
+    <div class="read"><b>Read:</b> same paper stage as Ugly Baby: licensed, not yet inspected. No date announced; IG bio still says coming soon. First venue for these operators: everything gets bought, nothing inherited.</div>
     <div class="watch"><b>Watch:</b> the inspection is the remaining gate; a date announcement on their IG would be the other tell.</div>
     <div class="receipts">Liquor Authority: licence issued 7/29 &middot; Health Dept.: permit on record, no inspection yet &middot; venue announcement (Instagram), read 8/6 &middot; checked 8/6</div>
   </div>
@@ -160,15 +167,15 @@ body { width:auto; max-width:1240px; margin:0 auto; }
 <div class="venue">
   <div class="vleft">
     <div class="vname">Soft Hours</div>
-    <div class="vwhere">119 Hester St, Chinatown/LES &mdash; open tea room going licensed</div>
-    <div class="vwho"><b>Evan L Huang</b> (Soft Hours NY 001 LLC), first licence. <span class="contact">evan@softhours.world &mdash; from the licence filing</span></div>
+    <div class="vwhere">119 Hester St, Chinatown/LES &middot; open tea room going licensed</div>
+    <div class="vwho"><b>Evan L Huang</b> (Soft Hours NY 001 LLC), first licence. <span class="contact">evan@softhours.world, from the licence filing</span></div>
   </div>
   <div class="vmain">
-    <div class="stageord">OPERATING &mdash; ADDING A LICENCE</div>
-    <div class="ladder"><span class="done">OPEN since 5/22 (dry) ✓</span><span class="pend">LIQUOR &mdash; wine/beer/cider applied, CB3 hearing 8/10</span></div>
-    <div class="fit"><b>CALL IF YOU SELL:</b> wine &middot; sake &middot; cider &middot; beer &middot; bakery supply &middot; glassware &mdash; <span class="no">not spirits (the class excludes them)</span></div>
+    <div class="stageord">OPERATING: ADDING A LICENCE</div>
+    <div class="ladder"><span class="done">OPEN since 5/22 (dry) ✓</span><span class="pend">LIQUOR: wine/beer/cider applied, CB3 hearing 8/10</span></div>
+    <div class="fit"><b>CALL IF YOU SELL:</b> wine &middot; sake &middot; cider &middot; beer &middot; bakery supply &middot; glassware &middot; <span class="no">not spirits (the class excludes them)</span></div>
     <div class="read"><b>Read:</b> a daytime tea room asking to run to midnight (2am Fri&ndash;Sat) with a stand-up bar. On the record: no happy hour, no DJs, background music only. 9 seats, occupancy 74, 4&ndash;6 staff. On the buildout, per the filed plans: new glass-door refrigeration, freezer, icemaker, dishwasher.</div>
-    <div class="watch"><b>Watch:</b> hearing 8/10 &mdash; this board has trimmed other applicants' hours and outdoor asks this cycle, so the 2am is the negotiable part.</div>
+    <div class="watch"><b>Watch:</b> hearing 8/10. This board has trimmed other applicants' hours and outdoor asks this cycle, so the 2am is the negotiable part.</div>
     <div class="receipts">Liquor Authority: filing logged complete 7/30 &middot; advance notice on the public record 7/7 &middot; operating commitments signed with Manhattan CB3, 7/31 &middot; Buildings Dept.: $65,000 + $24,000 &middot; hearing 8/10 &middot; checked 8/6</div>
   </div>
   <div class="vbudget"><div class="amt">$89,000</div><div class="lbl">$65K + $24K, 2 JOBS</div><div class="win"><b>WINDOW:</b> gated on<br>the 8/10 hearing</div></div>
@@ -181,10 +188,10 @@ body { width:auto; max-width:1240px; margin:0 auto; }
     <div class="vwho">Principals on file. <span class="redact">contact in full edition</span></div>
   </div>
   <div class="vmain">
-    <div class="stageord">STAGE 2 OF 5 &mdash; LICENSING</div>
-    <div class="ladder"><span class="done">BUILD &mdash; 2 filings ✓</span><span class="pend">LIQUOR &mdash; applied 7/25</span><span class="none2">HEALTH &mdash; no filing yet</span></div>
+    <div class="stageord">STAGE 2 OF 5: LICENSING</div>
+    <div class="ladder"><span class="done">BUILD: 2 filings ✓</span><span class="pend">LIQUOR: applied 7/25</span><span class="none2">HEALTH: no filing yet</span></div>
     <div class="fit"><b>CALL IF YOU SELL:</b> spirits &middot; barware &middot; buildout trades &middot; POS</div>
-    <div class="read"><b>Read:</b> a small cocktail bar doubling as a recipe lab. Early &mdash; licence just filed, no health track yet. The long-lead window: design, buildout trades, POS.</div>
+    <div class="read"><b>Read:</b> a small cocktail bar doubling as a recipe lab. Early: licence just filed, no health track yet. The long-lead window: design, buildout trades, POS.</div>
     <div class="watch"><b>Watch:</b> both remaining tracks are open; the next filing on either one re-ranks this row.</div>
     <div class="receipts">Buildings Dept.: $9,000 + $27,456 &middot; Liquor Authority: application 7/25 &middot; Health Dept.: no record at this address &middot; checked 8/6</div>
   </div>
@@ -192,35 +199,51 @@ body { width:auto; max-width:1240px; margin:0 auto; }
 </div>
 
 <div class="foot">
-  <b>What this is:</b> six enriched rows from this week's NYC pipeline. The full edition carries <b>every new on-premises application in Manhattan, Brooklyn and Queens</b> &mdash; recently 50&ndash;100 a month &mdash; as a stage-tracked CSV with stable venue IDs, with the most substantial venues worked up like the rows above, segmented by borough and vertical.
+  <b>What this is:</b> six enriched rows from this week's NYC pipeline. The full edition carries <b>every new on-premises application in Manhattan, Brooklyn and Queens</b>, recently 50&ndash;100 a month, as a stage-tracked CSV with stable venue IDs, with the most substantial venues worked up like the rows above, segmented by borough and vertical.
   <b>Windows</b> are stage-typical ranges, not venue forecasts; where the venue has announced timing, it is printed beside them. <b>Sources:</b> NYC Dept. of Buildings, NY State Liquor Authority, NYC Health Dept., and the community-board record.
 </div>
 
 
-<div class="sect">WHO'S BEHIND THIS</div>
+<div class="sect">ABOUT</div>
 <div class="about">
-I'm Kunal. I publish <a href="https://thesoftopen.substack.com">The Soft Open</a>, a weekly NYC newsletter on restaurant and bar openings, and The Pour Sheet is its trade side: the same filings, read the same way, organized for the people who sell to new venues instead of the people who eat at them. I pull the records and send the sheets myself, one subscriber at a time.
+The Pour Sheet is the trade side of <a href="https://thesoftopen.substack.com">The Soft Open</a>, the weekly NYC newsletter on restaurant and bar openings. Same records, same weekly read, organized for the people who sell to new venues instead of the people who eat at them.
 </div>
 
-<div class="sect">QUESTIONS BUYERS ASK</div>
+<div class="sect">FAIR QUESTIONS</div>
 <dl class="faq">
-  <dt>Is the full sheet just these six venues?</dt>
-  <dd>No. The sample shows the enriched rows. The full edition also carries every new on-premises filing in your borough as spreadsheet rows, recently 50 to 100 a month across the three boroughs, each with its stage, dates, and buildout dollars where filed.</dd>
-  <dt>Do my competitors get the same sheet?</dt>
-  <dd>Category-exclusive seats are available per borough: one POS dealer, one distributor, one broker. Ask when you request the sheet.</dd>
-  <dt>How do I know the timing reads are any good?</dt>
-  <dd>Your trial month includes a scorecard: the sheet's stage reads for your borough, logged, so you can grade them against what actually happened before you pay anything.</dd>
-  <dt>What happens to my info?</dt>
-  <dd>Nothing. No list sales, no sharing. You're a subscriber, not inventory.</dd>
+  <dt>Why wouldn't I just pull these filings myself?</dt>
+  <dd>You could. They're public, spread across four agencies that don't reference each other, and they change daily. The sheet is those four reads done weekly and keyed by address, so a liquor application, a buildout permit, and a health inspection at the same storefront show up as one venue instead of three disconnected rows. The real question is whether your week has room for reading dockets.</dd>
+  <dt>What's in the full edition that the sample doesn't show?</dt>
+  <dd>The sample is six worked-up venues. The full edition adds the complete list for your borough as spreadsheet rows: every new on-premises filing, recently 50 to 100 a month across Manhattan, Brooklyn and Queens, each with its dates, stage, and buildout dollars where filed.</dd>
+  <dt>Will my competitors read the same sheet?</dt>
+  <dd>Not if you take the exclusive seat. One per category per borough: one POS dealer, one distributor, one broker. First come.</dd>
+  <dt>How do I know the stage reads hold up?</dt>
+  <dd>You grade them. The trial month logs every read for your borough, and at the end you compare the sheet's calls against what actually happened. If it was wrong, you found out for free.</dd>
 </dl>
 
-<div class="cta">
+<div class="cta" id="request">
   <div class="big">Get this week's sheet. The first one's free.</div>
-  <p>Every new bar and restaurant filing in Manhattan, Brooklyn and Queens, read from the
-  city and state records weekly &mdash; addresses, buildout dollars, stage across three
-  agencies, and the filing behind every claim.<br>
-  Built to sit alongside whatever national list you already take: New York only, with the filing behind every claim.<br>Founding rate $99/month per borough, $149 once the founding group closes. No contract, cancel anytime.</p>
-  <a class="btn" href="mailto:thepoursheet@gmail.com?subject=Send%20me%20this%20week%27s%20sheet">Send me this week's sheet</a>
+  <p>Fill this in and the sheet for your borough arrives by email. No card, no call.</p>
+  <form action="https://formsubmit.co/thepoursheet@gmail.com" method="POST" class="reqform">
+    <input type="hidden" name="_subject" value="Pour Sheet request from the site">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://thepoursheet.com/thanks.html">
+    <input type="text" name="_honey" style="display:none">
+    <div class="frow">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="text" name="company" placeholder="Company">
+    </div>
+    <div class="frow">
+      <input type="email" name="email" placeholder="Email" required>
+      <select name="borough" required>
+        <option value="" disabled selected>Borough</option>
+        <option>Manhattan</option><option>Brooklyn</option><option>Queens</option><option>All three</option>
+      </select>
+    </div>
+    <textarea name="message" placeholder="Anything specific you sell or want to see (optional)"></textarea>
+    <button type="submit" class="btn">Send me this week's sheet</button>
+  </form>
+  <p class="alt">Prefer email? thepoursheet@gmail.com works too.</p>
 </div>
 <div class="pagefoot">The Pour Sheet is the trade side of The Soft Open, the NYC openings newsletter.<br>
 Sources: NYC Dept. of Buildings, NY State Liquor Authority, NYC Health Dept., and the community-board record.</div>
