@@ -67,7 +67,8 @@ body { width:auto; max-width:1240px; margin:0 auto; }
 .frow { display:flex; gap:10px; }
 .reqform input[type=text], .reqform input[type=email], .reqform select, .reqform textarea { width:100%; padding:10px 12px; margin-bottom:10px; border:1px solid #c5bba4; background:#fffdf7; font-family:Helvetica,Arial,sans-serif; font-size:13px; color:#1c1a15; }
 .reqform textarea { height:64px; resize:vertical; }
-.reqform .btn { border:none; cursor:pointer; width:100%; }
+.reqform .btn { border:none; cursor:pointer; width:100%; background:#1c1a15; color:#fffdf7; padding:13px; font-family:Helvetica,Arial,sans-serif; font-size:14px; letter-spacing:0.5px; border-radius:5px; margin-top:2px; }
+.reqform .btn:hover { background:#3a362e; }
 .cta .alt { margin-top:12px; font-size:12px; color:#8a8579; }
 @media (max-width:600px) { .frow { flex-direction:column; gap:0; } }
 .pagefoot { text-align:center; font-family:Helvetica,Arial,sans-serif; font-size:11px; color:#8a8579; padding:18px 0 40px; line-height:1.7; }
@@ -211,18 +212,18 @@ The Pour Sheet is the trade side of <a href="https://thesoftopen.substack.com">T
 
 <div class="sect">FAIR QUESTIONS</div>
 <dl class="faq">
-  <dt>Why wouldn't I just pull these filings myself?</dt>
-  <dd>You could. They're public, spread across four agencies that don't reference each other, and they change daily. The sheet is those four reads done weekly and keyed by address, so a liquor application, a buildout permit, and a health inspection at the same storefront show up as one venue instead of three disconnected rows. The real question is whether your week has room for reading dockets.</dd>
+  <dt>How is this different from the national lead lists?</dt>
+  <dd>It's New York only, and it shows its work. A national list gives you a name and an address. Each row here carries the filings behind it, with dates, the buildout spending where it's filed, and how far along the venue is across three separate agencies. Most subscribers would keep their national list and read this alongside it.</dd>
   <dt>What's in the full edition that the sample doesn't show?</dt>
   <dd>The sample is six worked-up venues. The full edition adds the complete list for your borough as spreadsheet rows: every new on-premises filing, recently 50 to 100 a month across Manhattan, Brooklyn and Queens, each with its dates, stage, and buildout dollars where filed.</dd>
   <dt>Will my competitors read the same sheet?</dt>
-  <dd>Not if you take the exclusive seat. One per category per borough: one POS dealer, one distributor, one broker. First come.</dd>
-  <dt>How do I know the stage reads hold up?</dt>
-  <dd>You grade them. The trial month logs every read for your borough, and at the end you compare the sheet's calls against what actually happened. If it was wrong, you found out for free.</dd>
+  <dd>That depends on the seat you take. A standard seat is $99 a month at the founding rate, and more than one company in a line of work can hold one. An exclusive seat closes that off: it locks your category in your borough, so for as long as you subscribe, no other POS dealer, distributor, or broker in your category gets the sheet there. There is one exclusive seat per category per borough, and it costs more than a standard seat. Ask for the number and you'll get a straight one.</dd>
+  <dt>How do I know the timing calls are any good?</dt>
+  <dd>Every row says how close a venue is to opening. Through your free month we keep a log of those calls for your borough, and at the end of it you can hold the log up against what actually happened. If the sheet was wrong, finding out cost you nothing.</dd>
 </dl>
 
 <div class="cta" id="request">
-  <div class="big">Get this week's sheet. The first one's free.</div>
+  <div class="big">Get this week's sheet. The first month's free.</div>
   <p>Fill this in and the sheet for your borough arrives by email. No card, no call.</p>
   <form action="https://formsubmit.co/thepoursheet@gmail.com" method="POST" class="reqform">
     <input type="hidden" name="_subject" value="Pour Sheet request from the site">
@@ -243,7 +244,7 @@ The Pour Sheet is the trade side of <a href="https://thesoftopen.substack.com">T
     <textarea name="message" placeholder="Anything specific you sell or want to see (optional)"></textarea>
     <button type="submit" class="btn">Send me this week's sheet</button>
   </form>
-  <p class="alt">Prefer email? thepoursheet@gmail.com works too.</p>
+  <p class="alt">Prefer email? Send a note to <a href="mailto:thepoursheet@gmail.com?subject=Send%20me%20this%20week%27s%20sheet">thepoursheet@gmail.com</a> and ask for this week's sheet.</p>
 </div>
 <div class="pagefoot">The Pour Sheet is the trade side of The Soft Open, the NYC openings newsletter.<br>
 Sources: NYC Dept. of Buildings, NY State Liquor Authority, NYC Health Dept., and the community-board record.</div>
