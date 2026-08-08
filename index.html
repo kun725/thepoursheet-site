@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Pour Sheet — NYC restaurant openings, from the filings, weekly</title>
+<meta name="description" content="A weekly lead sheet of every new bar and restaurant filing in Manhattan, Brooklyn and Queens, with buildout dollars, stage across three agencies, and the filings behind every claim.">
+<style>
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; background:#fffdf7; width:1240px; padding:44px 52px; color:#1c1a15; }
+  .mast { display:flex; justify-content:space-between; align-items:baseline; border-bottom:3px double #1c1a15; padding-bottom:10px; }
+  .mast h1 { font-size:34px; letter-spacing:0.5px; }
+  .mast .ed { font-family:Helvetica,Arial,sans-serif; font-size:12px; color:#8a8579; text-align:right; line-height:1.5;}
+  .tagline { font-size:15px; font-style:italic; color:#4a463d; margin:10px 0 12px; }
+  .diffs { display:flex; gap:14px; margin-bottom:20px; font-family:Helvetica,Arial,sans-serif; }
+  .diff { flex:1; border:1px solid #d5cbb4; background:#faf7ef; padding:8px 12px; font-size:11px; line-height:1.4; }
+  .diff b { font-size:11.5px; letter-spacing:0.4px; }
+  .venue { border-top:1px solid #d5cbb4; padding:15px 0 13px; display:flex; gap:20px; }
+  .venue:last-of-type { border-bottom:1px solid #d5cbb4; }
+  .vleft { width:252px; flex-shrink:0; }
+  .vname { font-size:16.5px; font-weight:bold; }
+  .vwhere { font-size:12px; color:#6a6459; margin:2px 0 6px;}
+  .vwho { font-size:11.5px; line-height:1.45; }
+  .vwho .redact { font-family:Helvetica,Arial,sans-serif; font-size:9.5px; color:#9a927f; border:1px dashed #c5bba2; padding:1px 5px; }
+  .vwho .contact { font-family:Helvetica,Arial,sans-serif; font-size:10px; color:#4a6a4a; border:1px solid #9ab894; background:#eef4ec; padding:1px 6px; }
+  .vbudget { width:150px; flex-shrink:0; text-align:right; font-family:Helvetica,Arial,sans-serif; }
+  .vbudget .amt { font-size:17px; font-weight:bold; }
+  .vbudget .lbl { font-size:9.5px; color:#8a8579; letter-spacing:0.5px; }
+  .vbudget .none { font-size:10.5px; color:#8a8579; font-style:italic; line-height:1.4;}
+  .vmain { flex:1; }
+  .ladder { font-family:Helvetica,Arial,sans-serif; font-size:11px; margin-bottom:6px; }
+  .ladder span { display:inline-block; padding:2.5px 8px; margin:0 4px 3px 0; border-radius:3px; border:1px solid #999; }
+  .done { background:#e8efe3; border-color:#7d9a6d !important; }
+  .pend { background:#faf3dc; border-color:#c2a94e !important; }
+  .none2 { background:#f1efe9; color:#959083; }
+  .stageord { font-family:Helvetica,Arial,sans-serif; font-size:9.5px; letter-spacing:1px; color:#8a8579; margin-bottom:3px; }
+  .fit { font-family:Helvetica,Arial,sans-serif; font-size:10px; margin:1px 0 6px; color:#3d4a3d; }
+  .fit b { letter-spacing:0.5px; color:#8a8579; font-weight:normal; font-size:9px; }
+  .fit .no { color:#8a5a5a; }
+  .watch { font-size:11.5px; line-height:1.45; margin-bottom:5px; color:#4a463d; }
+  .watch b { background:#efe4e0; padding:0 4px; }
+  .vbudget .win { font-family:Helvetica,Arial,sans-serif; font-size:9.5px; color:#4a463d; margin-top:8px; border-top:1px dotted #c5bba2; padding-top:6px; line-height:1.45;}
+  .read { font-size:12.5px; line-height:1.5; margin-bottom:5px; }
+  .read b { background:#fdf0d2; padding:0 4px; }
+  .receipts { font-family:Helvetica,Arial,sans-serif; font-size:9.8px; color:#736d5f; line-height:1.55; border-left:3px solid #d5cbb4; padding-left:8px; }
+  .foot { margin-top:20px; font-family:Helvetica,Arial,sans-serif; font-size:10.5px; color:#6a6459; line-height:1.6; }
+  .foot b { color:#1c1a15; }
+
+body { width:auto; max-width:1240px; margin:0 auto; }
+.hero { text-align:center; padding:30px 0 6px; }
+.hero h2 { font-size:22px; font-weight:normal; font-style:italic; color:#4a463d; margin:14px 0 4px; }
+.hero p { font-family:Helvetica,Arial,sans-serif; font-size:13px; color:#6a6459; }
+.cta { text-align:center; margin:34px 0 10px; padding:26px; background:#faf7ef; border:1px solid #d5cbb4; }
+.cta .big { font-size:20px; font-weight:bold; margin-bottom:8px; }
+.cta p { font-family:Helvetica,Arial,sans-serif; font-size:13px; color:#4a463d; line-height:1.6; }
+.cta a.btn { display:inline-block; margin-top:14px; padding:11px 26px; background:#1c1a15; color:#fffdf7; text-decoration:none; font-family:Helvetica,Arial,sans-serif; font-size:14px; letter-spacing:0.5px; }
+.pagefoot { text-align:center; font-family:Helvetica,Arial,sans-serif; font-size:11px; color:#8a8579; padding:18px 0 40px; line-height:1.7; }
+@media (max-width:900px) { .venue { flex-direction:column; } .vleft,.vbudget { width:auto; text-align:left; } .diffs { flex-direction:column; } }
+</style></head><body>
+<div class="hero">
+  <p>NYC PRE-OPENING INTELLIGENCE &middot; WEEKLY</p>
+</div>
+
+
+<div class="mast">
+  <h1>THE POUR SHEET</h1>
+  <div class="ed">SAMPLE EDITION · AUGUST 2026<br>NYC pre-opening intelligence · weekly</div>
+</div>
+<div class="tagline">Who's opening, how close they really are, and what they're spending &mdash; straight from the filings.</div>
+
+<div class="diffs">
+  <div class="diff"><b>EVERY CLAIM CARRIES ITS DATE.</b> Filing dates from the record and a checked date on every row &mdash; including the rows where no record exists yet.</div>
+  <div class="diff"><b>BUILDOUT $ FROM BUILDINGS FILINGS.</b> What they're investing, venue by venue.</div>
+  <div class="diff"><b>STAGE ACROSS ALL THREE TRACKS.</b> Buildings, liquor, and health filings each move on their own schedule. Missing filings shown.</div>
+</div>
+
+<div class="venue">
+  <div class="vleft">
+    <div class="vname">20 Blocks</div>
+    <div class="vwhere">215 E 4th St, East Village</div>
+    <div class="vwho"><b>Jack August &amp; Willy Corman</b> (Empty Lunchbox LLC) &mdash; EV-raised founders, community-garden pop-up before this. <span class="redact">contact in full edition</span></div>
+  </div>
+  <div class="vmain">
+    <div class="stageord">STAGE 4 OF 5 &mdash; INSPECTIONS</div>
+    <div class="ladder"><span class="done">SPACE &mdash; bought the built-out Izakaya premises ✓</span><span class="pend">LIQUOR &mdash; pending + temp permit requested</span><span class="pend">HEALTH &mdash; inspected 7/30, items to fix</span></div>
+    <div class="fit"><b>CALL IF YOU SELL:</b> food distribution &middot; kitchen &amp; hood service &middot; POS &middot; beer/wine &middot; AV &amp; retail fixtures</div>
+    <div class="read"><b>Read:</b> furthest along on this sheet &mdash; pre-opening inspection 7/30, items still to fix. Conditions on the record: sandwich shop with full kitchen open all hours, noon open, no outdoor. 20 seats, occupancy 74, ~6 staff planned. Buildout notes from the filings: projector screen, vinyl, a retail pantry sideline.</div>
+    <div class="watch"><b>Watch:</b> reinspection is the gate &mdash; and the temporary permit means pouring can legally precede the final licence.</div>
+    <div class="receipts">Health Dept.: on file, initial inspection 7/30 &middot; liquor application via purchase of the prior licensee's assets &middot; on the record with Manhattan CB3 since March '25, conditions agreed &middot; checked 8/6</div>
+  </div>
+  <div class="vbudget"><div class="none">acquired built-out space<br>(asset sale &mdash; no buildings<br>filing to carry a figure)</div><div class="win"><b>WINDOW:</b> 2&ndash;6 wks<br>stage-typical, gated<br>on reinspection</div></div>
+</div>
+
+<div class="venue">
+  <div class="vleft">
+    <div class="vname">Ugly Baby</div>
+    <div class="vwhere">364 Grand St, Williamsburg (ex&ndash;Emmy Squared)</div>
+    <div class="vwho"><b>Sirichai Sreparplarn</b>, chef of the closed Smith St original &mdash; first location with a full bar. <span class="redact">contact in full edition</span></div>
+  </div>
+  <div class="vmain">
+    <div class="stageord">STAGE 3 OF 5 &mdash; LICENSED, HEALTH PENDING</div>
+    <div class="ladder"><span class="done">LIQUOR &mdash; restaurant licence ISSUED 8/3, bar permit 8/5 ✓</span><span class="pend">HEALTH &mdash; applied, no inspection yet</span></div>
+    <div class="fit"><b>CALL IF YOU SELL:</b> spirits &amp; wine &middot; smallwares &middot; linen &middot; POS &middot; reservations</div>
+    <div class="read"><b>Read:</b> licence in hand this week; the health track says weeks out, not days. First location with a full bar means the beverage program is being built from zero.</div>
+    <div class="watch"><b>Watch:</b> inspection scheduling is the swing variable; a February target already slipped once.</div>
+    <div class="receipts">Liquor Authority: restaurant licence issued 8/3, additional bar permit 8/5 &middot; Health Dept.: application on file, no inspection on record &middot; checked 8/6</div>
+  </div>
+  <div class="vbudget"><div class="none">no buildings alteration<br>filing on record<br>(checked 8/6)</div><div class="win"><b>WINDOW:</b> 4&ndash;10 wks<br>stage-typical</div></div>
+</div>
+
+<div class="venue">
+  <div class="vleft">
+    <div class="vname">Booth's Extra Fine</div>
+    <div class="vwhere">62 S 2nd St (Wythe corner), Williamsburg</div>
+    <div class="vwho"><b>Nick Pfannerstill</b> &mdash; operator of Nobody Told Me (UWS + Dumbo); owner on the Buildings Dept. paperwork. <span class="redact">contact in full edition</span></div>
+  </div>
+  <div class="vmain">
+    <div class="stageord">STAGE 2 OF 5 &mdash; LICENSING</div>
+    <div class="ladder"><span class="done">BUILD &mdash; 2 filings since 3/25 ✓</span><span class="pend">LIQUOR &mdash; applied 7/22</span><span class="none2">HEALTH &mdash; no filing yet</span></div>
+    <div class="fit"><b>CALL IF YOU SELL:</b> spirits &amp; wine &middot; ice &amp; glassware &middot; POS &middot; kitchen equipment &middot; insurance</div>
+    <div class="read"><b>Read:</b> their own IG says fall, and the filings fit: liquor applied 7/22, no health filing yet &mdash; the stage where equipment and fit-out get bought. A third venue for this operator: expansion accounts, not greenfield.</div>
+    <div class="watch"><b>Watch:</b> a health filing appearing is the signal the timeline is compressing.</div>
+    <div class="receipts">Buildings Dept.: $170,000 (3/18/25) + $26,000 (5/29/25) &middot; Liquor Authority: application logged complete 7/22 &middot; on the record with Brooklyn CB1, June 15 &middot; Health Dept.: no record at this address &middot; checked 8/6</div>
+  </div>
+  <div class="vbudget"><div class="amt">$196,000</div><div class="lbl">$170K (3/25) + $26K (5/25)</div><div class="win"><b>WINDOW:</b> 3&ndash;6 mo<br>stage-typical; venue<br>says fall</div></div>
+</div>
+
+<div class="venue">
+  <div class="vleft">
+    <div class="vname">Pony's</div>
+    <div class="vwhere">424 Van Brunt St, Red Hook</div>
+    <div class="vwho"><b>Elana Shvalbe &amp; Michael Furac</b> &mdash; the Five Seats barbershop cocktail pop-up ('20&ndash;'21), first brick-and-mortar. <span class="redact">contact in full edition</span></div>
+  </div>
+  <div class="vmain">
+    <div class="stageord">STAGE 3 OF 5 &mdash; LICENSED, HEALTH PENDING</div>
+    <div class="ladder"><span class="done">LIQUOR &mdash; ISSUED 7/29 ✓</span><span class="pend">HEALTH &mdash; applied, no inspection yet</span></div>
+    <div class="fit"><b>CALL IF YOU SELL:</b> spirits &amp; wine &middot; smallwares &middot; POS &middot; glassware</div>
+    <div class="read"><b>Read:</b> same paper stage as Ugly Baby &mdash; licensed, not yet inspected. No date announced; IG bio still says coming soon. First venue for these operators: everything gets bought, nothing inherited.</div>
+    <div class="watch"><b>Watch:</b> the inspection is the remaining gate; a date announcement on their IG would be the other tell.</div>
+    <div class="receipts">Liquor Authority: licence issued 7/29 &middot; Health Dept.: permit on record, no inspection yet &middot; venue announcement (Instagram), read 8/6 &middot; checked 8/6</div>
+  </div>
+  <div class="vbudget"><div class="none">no buildings alteration<br>filing on record<br>(checked 8/6)</div><div class="win"><b>WINDOW:</b> 4&ndash;10 wks<br>stage-typical</div></div>
+</div>
+
+<div class="venue">
+  <div class="vleft">
+    <div class="vname">Soft Hours</div>
+    <div class="vwhere">119 Hester St, Chinatown/LES &mdash; open tea room going licensed</div>
+    <div class="vwho"><b>Evan L Huang</b> (Soft Hours NY 001 LLC), first licence. <span class="contact">evan@softhours.world &mdash; from the licence filing</span></div>
+  </div>
+  <div class="vmain">
+    <div class="stageord">OPERATING &mdash; ADDING A LICENCE</div>
+    <div class="ladder"><span class="done">OPEN since 5/22 (dry) ✓</span><span class="pend">LIQUOR &mdash; wine/beer/cider applied, CB3 hearing 8/10</span></div>
+    <div class="fit"><b>CALL IF YOU SELL:</b> wine &middot; sake &middot; cider &middot; beer &middot; bakery supply &middot; glassware &mdash; <span class="no">not spirits (the class excludes them)</span></div>
+    <div class="read"><b>Read:</b> a daytime tea room asking to run to midnight (2am Fri&ndash;Sat) with a stand-up bar. On the record: no happy hour, no DJs, background music only. 9 seats, occupancy 74, 4&ndash;6 staff. On the buildout, per the filed plans: new glass-door refrigeration, freezer, icemaker, dishwasher.</div>
+    <div class="watch"><b>Watch:</b> hearing 8/10 &mdash; this board has trimmed other applicants' hours and outdoor asks this cycle, so the 2am is the negotiable part.</div>
+    <div class="receipts">Liquor Authority: filing logged complete 7/30 &middot; advance notice on the public record 7/7 &middot; operating commitments signed with Manhattan CB3, 7/31 &middot; Buildings Dept.: $65,000 + $24,000 &middot; hearing 8/10 &middot; checked 8/6</div>
+  </div>
+  <div class="vbudget"><div class="amt">$89,000</div><div class="lbl">$65K + $24K, 2 JOBS</div><div class="win"><b>WINDOW:</b> gated on<br>the 8/10 hearing</div></div>
+</div>
+
+<div class="venue">
+  <div class="vleft">
+    <div class="vname">Cocktail Test Kitchen</div>
+    <div class="vwhere">359 W 54th St, Hell's Kitchen</div>
+    <div class="vwho">Principals on file. <span class="redact">contact in full edition</span></div>
+  </div>
+  <div class="vmain">
+    <div class="stageord">STAGE 2 OF 5 &mdash; LICENSING</div>
+    <div class="ladder"><span class="done">BUILD &mdash; 2 filings ✓</span><span class="pend">LIQUOR &mdash; applied 7/25</span><span class="none2">HEALTH &mdash; no filing yet</span></div>
+    <div class="fit"><b>CALL IF YOU SELL:</b> spirits &middot; barware &middot; buildout trades &middot; POS</div>
+    <div class="read"><b>Read:</b> a small cocktail bar doubling as a recipe lab. Early &mdash; licence just filed, no health track yet. The long-lead window: design, buildout trades, POS.</div>
+    <div class="watch"><b>Watch:</b> both remaining tracks are open; the next filing on either one re-ranks this row.</div>
+    <div class="receipts">Buildings Dept.: $9,000 + $27,456 &middot; Liquor Authority: application 7/25 &middot; Health Dept.: no record at this address &middot; checked 8/6</div>
+  </div>
+  <div class="vbudget"><div class="amt">$36,456</div><div class="lbl">$9K + $27K, 2 JOBS</div><div class="win"><b>WINDOW:</b> 3&ndash;6+ mo<br>stage-typical</div></div>
+</div>
+
+<div class="foot">
+  <b>What this is:</b> six enriched rows from this week's NYC pipeline. The full edition carries <b>every new on-premises application in Manhattan, Brooklyn and Queens</b> &mdash; recently 50&ndash;100 a month &mdash; as a stage-tracked CSV with stable venue IDs, with the most substantial venues worked up like the rows above, segmented by borough and vertical.
+  <b>Windows</b> are stage-typical ranges, not venue forecasts; where the venue has announced timing, it is printed beside them. <b>Sources:</b> NYC Dept. of Buildings, NY State Liquor Authority, NYC Health Dept., and the community-board record.
+</div>
+
+
+<div class="cta">
+  <div class="big">Get this week's sheet. The first one's free.</div>
+  <p>Every new bar and restaurant filing in Manhattan, Brooklyn and Queens, read from the
+  city and state records weekly &mdash; addresses, buildout dollars, stage across three
+  agencies, and the filing behind every claim.<br>
+  Built to sit alongside whatever national list you already take: New York only, with the filing behind every claim.<br>Founding rate $99/month per borough, $149 once the founding group closes. No contract, cancel anytime.</p>
+  <a class="btn" href="mailto:thepoursheet@gmail.com?subject=Send%20me%20this%20week%27s%20sheet">Send me this week's sheet</a>
+</div>
+<div class="pagefoot">The Pour Sheet is the trade side of The Soft Open, the NYC openings newsletter.<br>
+Sources: NYC Dept. of Buildings, NY State Liquor Authority, NYC Health Dept., and the community-board record.</div>
+</body></html>
